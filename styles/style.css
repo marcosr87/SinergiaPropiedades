@@ -194,4 +194,13 @@ footer .footer-links a:hover {
   color: rgb(84, 186, 185);;
 }
 
-  
+.formulario{
+  background-color: rgba(255, 255, 255, 0.808);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.contacto{
+  background-image: url(https://edificiopetra.cl/wp-content/uploads/2021/08/EDIFICIO-PETRA.jpg);
+  background-size: cover;
+}

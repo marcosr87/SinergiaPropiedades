@@ -5,7 +5,20 @@ body{
 }
 
 .navbar{
-    background-color: #E9DAC1;
+    background-color: rgba(41, 96, 121);
+}
+
+.text-nav{
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: rgb(255, 255, 255) !important;
+  font-size: 18px;
+  font-family: 'Lato';
+}
+
+.img-empresa{
+  width: 100%;
+  height: 500px;
 }
 
 .portada-h{
@@ -26,10 +39,14 @@ body{
 .title-1{
     font-size: 40px;
     text-transform: uppercase;
+    color: rgba(84, 186, 184, 0.884);
+    font-weight: bold;
+    font-family: 'Lato';
 }
 
 .card-text{
     margin: 0;
+    font-family: 'Lato';
 }
 
 .texto-card{
@@ -46,11 +63,8 @@ body{
 .cards {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
-.contacto{
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-}
 .carrusel{
-  border-top: 5px solid rgba(0, 0, 0, 0.541);
+  border-top: 1px solid rgba(41, 96, 121);
 }
 
 /* ESTILO PRESENTACION */
@@ -60,7 +74,7 @@ body{
   font-family: 'Lato' ,sans-serif;
   line-height: 1.5;
   letter-spacing: 0.5px;
-  border-top: 5px solid rgba(0, 0, 0, 0.541);
+  border-top: 2px solid rgba(0, 0, 0, 0.541);
   
 }
 
@@ -108,6 +122,8 @@ h2,h4
 /* ESTILOS FOOTER */
 
 .footer-top {
+  background-color: #202020;
+  color: white;
   padding-top: 40px;
   padding-bottom: 20px;
   font-family: 'Lato' ,sans-serif;
@@ -116,6 +132,8 @@ h2,h4
 }
 
 .footer-bottom {
+  background-color: #202020;
+  color: white;
   padding-top: 30px;
   padding-bottom: 30px;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
@@ -186,12 +204,13 @@ footer .footer-links a:hover {
 .title-sm {
   font-size: 16px;
   letter-spacing: 1px;
+  color: rgb(84, 186, 185)
 }
 
 .logo-text {
   font-size: 22px;
   text-transform: uppercase;
-  color: rgb(84, 186, 185);;
+  color: rgb(84, 186, 185);
 }
 
 .formulario{
@@ -203,4 +222,22 @@ footer .footer-links a:hover {
 .contacto{
   background-image: url(https://edificiopetra.cl/wp-content/uploads/2021/08/EDIFICIO-PETRA.jpg);
   background-size: cover;
+}
+
+@media (min-width: 320px){
+  .portada-h{
+      height: 250px;
+  }
+}
+
+@media (min-width: 480px){
+  .portada-h{
+      height: 250px;
+  }
+}
+
+@media (min-width: 760px){
+  .portada-h{
+      height: 500px;
+  }
 }

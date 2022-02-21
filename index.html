@@ -17,15 +17,15 @@
     />
     <link rel="stylesheet" href="./styles/style.css">
   </head>
-  <body>
+  <body data-bs-spy="scroll" data-bs-target=".navbar">
     <header id="inicio">
       <!--------- NAVBAR ---------->
-      <nav class="navbar navbar-expand-lg navbar-light"> 
+      <nav class="navbar navbar-expand-lg navbar-light py-2"> 
         <!-- navbar-expand-lg indica que la barra se mostrará en su tamaño completo a partir del tamaño de pantalla grande (lg), colapsándose para tamaños más pequeños. -->
         <!-- navbar-light: esta clase se usa para configurar el color del contenido de la barra de navegación en oscuro. Cambiará el icono del conmutador para que tenga líneas más oscuras. -->
-        <div class="container-fluid">
+        <div class="container">
         <!-- container-fluid (anchura variable). De esta forma las filas se alinean bien y muestran el padding correcto. Las filas se utilizan para agrupar horizontalmente a varias columnas. El contenido siempre se coloca dentro de las columnas, ya que las filas sólo deberían contener como hijos elementos de tipo columna. -->
-          <a class="navbar-brand" href="#"><img src="./img/logo.png" class ="img-fluid" width="15%" height="15%" alt="Logo"></a>
+          <a class="navbar-brand" href="#"><img src="./img/logo.png" class ="img-fluid" width="99px" height="99px" alt="Logo"></a>
           <!-- navbar-brand muestra el nombre o logotipo de la web --> 
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
               <!-- navbar-toggler. Se mostrará únicamente cuando el menú se colapse y se ocultará cuando el menú aparezca expandido. Cuando sea visible podremos pulsar sobre él para mostrar u ocultar el menú. Las opciones de menú, las cuales las añadiremos dentro de una lista tipo " <lu> " con la clase " . -->
@@ -34,7 +34,7 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <!-- collapse . navbar-collapse ", que definirá la zona que se colapsará (u ocultará) para pantallas pequeñas. Cada elemento de la lista de menú <lu> se definirá mediante una etiqueta " <li> " sobre la que aplicaremos la clase "  -->
-            <ul class="navbar-nav">
+            <ul class="navbar-nav ms-auto">
               <li class="nav-item">
                 <a class="nav-link active text-nav fw-bold" aria-current="page" href="#">Inicio</a>
                 <!-- Cada elemento del menú será un .nav-item, los cuales contienen un enlace tipo .nav-link a la sección a mostrar. Para marcar el elemento del menú que está activo o seleccionado se utiliza la clase .active. -->

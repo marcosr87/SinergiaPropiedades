@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+    <link rel="stylesheet" href="./styles/login.css">
+</head>
+<body>
+    <header id="inicio">
+        <!--------- NAVBAR ---------->
+        <nav class="navbar navbar-expand-lg navbar-light py-2"> 
+          <div class="container">
+            <a class="navbar-brand" href="#"><img src="./img/logo.png" class ="img-fluid" width="99px" height="99px" alt="Logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"> 
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link active text-nav fw-bold" aria-current="page" href="./index.html">Inicio</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-nav fw-bold" href="./index.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Propiedades
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="#cards">Casas</a></li>
+                    <li><a class="dropdown-item" href="#cards">Departamentos</a></li>
+                    <li><a class="dropdown-item" href="#cards">Oficinas</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-nav fw-bold" href="./index.html">Nosotros</a>
+              </li>
+                <li class="nav-item">
+                    <a class="nav-link text-nav fw-bold" href="./index.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-nav fw-bold" href="#">Mi cuenta</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+    <main>
+        <section>
+            <div class="container w-75 my-3">
+                <div class="row align-items-stretch">
+                    <div class="col d-none d-lg-block col-md-5 col-lg-5 col-xl-6">
+                        <img src="./img/login.jpg" class="bg" alt="Edificio">
+                    </div>
+                    <div class="col bg-white p-2">
+                        <h2 class="fw-bold text-center py-3">Ingresa</h2>
+
+                        <!-- Login -->
+                        <form action="">
+                            <div class="mb-4">
+                                <label for="email" class="form-label">Correo electronico</label>
+                                <input type="email" class="form-control" name="email">
+                            </div>
+                            <div class="mb-4">
+                                <label for="password" class="form-label">Contraseña</label>
+                                <input type="password" class="form-control" name="password">
+                            </div>
+                            <div class="mb-4 form-check">
+                                <input type="checkbox" class="form-check-input" name="connected">
+                                <label for="connected" class="form-check-label">Mantenerme conectado</label>
+                            </div>
+
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-primary">Inciar sesión</button>
+                            </div>
+                            <div class="my-3">
+                                <span>¿No tienes cuenta? <a href="">Registrate</a></span>
+                                <span>|</span>
+                                <span><a href="">Recuperar contraseña</a></span>
+                            </div>
+                        </form>
+
+                        <!-- Login con redes sociales -->
+                        <div class="container w-100 my-4">
+                            <div class="row text-center">
+                                <div class="col-12 fw-bold">Iniciar sesión a través de: </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <button class="btn btn-outline-primary w-100 my-1 text-center">Facebook</button>
+                                </div>
+                                <div class="col">
+                                    <button class="btn btn-outline-danger w-100 my-1 text-center">Google</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-top">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4">
+                <h4 class="logo-text">Sinergia</h4>
+                <p>Somos grandes y prestigiosos dentro del mercado inmobiliario.
+                </p>
+                <div class="w-75 d-flex justify-content-between social-icons">
+                  <a href="#"><i class="fa fa-facebook-f"></i></a>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                  <a href="#"><i class="fa fa-github"></i></a>
+               </div>
+              </div>
+              <div class="col-md-2">
+                <h5 class="title-sm">Navegación</h5>
+                <div class="footer-links">
+                  <a href="#inicio">Inicio</a>
+                  <a href="#presentacion">Nuestra empresa</a>
+                  <a href="#cards">Alquileres</a>
+                  <a href="#contacto">Contacto</a>
+
+                </div>
+              </div>
+
+              <div class="col-md-2">
+                <h5 class="title-sm">Acerca de</h5>
+                <div class="footer-links">
+                  <a href="#">FAQ's</a>
+                  <a href="#">Politicas y privacidad</a>
+                  <a href="#">Licencia</a>
+
+                </div>
+              </div>
+
+              <div class="col-md-2">
+                <h5 class="title-sm">Contacto</h5>
+                <div class="footer-links">
+                  <p class="mb">1649 San Martín, San Miguel de Tucumán, 4000</p>
+                  <p class="mb-">8(800)316-06-42</p>
+                  <p class="mb" >sinergia@inmobiliaria.com</p>
+
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="container">
+             <div class="row justify-content-between gy-3">
+                <div class="col-md-6">
+                   <p class="mb-0">© Agency2022. All rights reserved</p>
+                </div>
+                <div class="col-auto">
+                   <p class="mb-0">Created with ❤️ by SinergiaTeam</p>
+                </div>
+             </div>
+          </div>
+       </div>
+
+      </footer>
+    
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+</body>
+</html>

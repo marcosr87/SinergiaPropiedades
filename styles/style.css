@@ -222,6 +222,10 @@ footer .footer-links a:hover {
     text-shadow: 2px 2px 6px black;
   }
 
+  .img-empresa{
+    height: 350px;
+  }
+
 }
 
 @media (min-width: 480px){
@@ -236,6 +240,10 @@ footer .footer-links a:hover {
     text-shadow: 2px 2px 6px black;
   }
 
+  .img-empresa{
+    height: 400px;
+  }
+
 }
 
 @media (min-width: 760px){
@@ -248,6 +256,10 @@ footer .footer-links a:hover {
   .portada-title{
     font-size: 50px;
     text-shadow: 2px 2px 6px black;
+  }
+
+  .img-empresa{
+    height: 500px;
   }
 
 }
@@ -275,6 +287,6 @@ footer .footer-links a:hover {
 @media (min-width: 992px){
   h2.example {
     font-size: 34px; 
-    color: rgb(84, 186, 185);
+    color: black;
   }
 }

@@ -19,28 +19,19 @@
   </head>
   <body data-bs-spy="scroll" data-bs-target=".navbar">
     <header id="inicio">
-      <!--------- NAVBAR ---------->
-      <nav class="navbar navbar-expand-lg navbar-light py-2"> 
-        <!-- navbar-expand-lg indica que la barra se mostrará en su tamaño completo a partir del tamaño de pantalla grande (lg), colapsándose para tamaños más pequeños. -->
-        <!-- navbar-light: esta clase se usa para configurar el color del contenido de la barra de navegación en oscuro. Cambiará el icono del conmutador para que tenga líneas más oscuras. -->
+
+      <nav class="navbar navbar-expand-lg navbar-light py-2">
         <div class="container">
-        <!-- container-fluid (anchura variable). De esta forma las filas se alinean bien y muestran el padding correcto. Las filas se utilizan para agrupar horizontalmente a varias columnas. El contenido siempre se coloca dentro de las columnas, ya que las filas sólo deberían contener como hijos elementos de tipo columna. -->
           <a class="navbar-brand" href="#"><img src="./img/logo.png" class ="img-fluid" width="99px" height="99px" alt="Logo"></a>
-          <!-- navbar-brand muestra el nombre o logotipo de la web --> 
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <!-- navbar-toggler. Se mostrará únicamente cuando el menú se colapse y se ocultará cuando el menú aparezca expandido. Cuando sea visible podremos pulsar sobre él para mostrar u ocultar el menú. Las opciones de menú, las cuales las añadiremos dentro de una lista tipo " <lu> " con la clase " . -->
             <span class="navbar-toggler-icon"></span>
-            <!-- navbar-toggler-icon (hamburguesa) en Bootstrap 4 usa un SVG background-image . Hay 2 "versiones" de la imagen del icono del conmutador. Uno para una barra de navegación clara y otro para una barra de navegación oscura -->
           </button>
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <!-- collapse . navbar-collapse ", que definirá la zona que se colapsará (u ocultará) para pantallas pequeñas. Cada elemento de la lista de menú <lu> se definirá mediante una etiqueta " <li> " sobre la que aplicaremos la clase "  -->
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
                 <a class="nav-link active text-nav fw-bold" aria-current="page" href="#inicio">Inicio</a>
-                <!-- Cada elemento del menú será un .nav-item, los cuales contienen un enlace tipo .nav-link a la sección a mostrar. Para marcar el elemento del menú que está activo o seleccionado se utiliza la clase .active. -->
               </li>
               <li class="nav-item dropdown">
-              <!-- nav-item dropdown sirve para crear una lista desplegable -->
                 <a class="nav-link dropdown-toggle text-nav fw-bold" href="#cards" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Propiedades
                 </a>
@@ -165,7 +156,6 @@
         <div class="row d-flex justify-content-center">
           <h1 class="title-1 text-center my-2">Propiedades destacadas</h1>
 
-          <!------- CARD 1 --------->
           <div class="col-12 col-sm-12 col-md-6 col-lg-3 card d-flex my-3 mx-2">
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-inner">
@@ -203,8 +193,6 @@
             </div>
           </div>
 
-          <!------- CARD 2 --------->
-          <!-- colocar style en el css -->
           <div class="col-12 col-sm-12 col-md-6 col-lg-3 card d-flex my-3 mx-2">
             <div id="Alquiler1" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -236,7 +224,6 @@
             </div>
           </div>
 
-          <!------- CARD 3 --------->
           <div class="col-12 col-sm-12 col-md-6 col-lg-3 card d-flex my-3 mx-2">
             <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -271,8 +258,6 @@
             </div>
           </div>
 
-
-          <!------- CARD 4 --------->
           <div class="col-12 col-sm-12 col-md-6 col-lg-3 card d-flex my-3 mx-2">
             <div id="carouselExampleControls3" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -309,8 +294,7 @@
 
         </div>        
       </section>
-      
-      <!-------------- CONTACTO --------------->
+
       <section id="contacto" class="container-fluid d-flex justify-content-center py-3 contacto">
         <div class="formulario col-md-8 col-lg-7">
           <h1 class="title-1 text-center my-2">Contacto</h1>
@@ -350,8 +334,7 @@
           </form>
         </div>
       </section>
-      
-      <!-- FOOTER -->
+
       <footer>
         <div class="footer-top">
           <div class="container">

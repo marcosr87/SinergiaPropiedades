@@ -21,26 +21,17 @@
     <header id="inicio">
       <!--------- NAVBAR ---------->
       <nav class="navbar navbar-expand-lg navbar-light py-2"> 
-        <!-- navbar-expand-lg indica que la barra se mostrará en su tamaño completo a partir del tamaño de pantalla grande (lg), colapsándose para tamaños más pequeños. -->
-        <!-- navbar-light: esta clase se usa para configurar el color del contenido de la barra de navegación en oscuro. Cambiará el icono del conmutador para que tenga líneas más oscuras. -->
-        <div class="container">
-        <!-- container-fluid (anchura variable). De esta forma las filas se alinean bien y muestran el padding correcto. Las filas se utilizan para agrupar horizontalmente a varias columnas. El contenido siempre se coloca dentro de las columnas, ya que las filas sólo deberían contener como hijos elementos de tipo columna. -->
-          <a class="navbar-brand" href="#"><img src="./img/logo.png" class ="img-fluid" width="99px" height="99px" alt="Logo"></a>
-          <!-- navbar-brand muestra el nombre o logotipo de la web --> 
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <!-- navbar-toggler. Se mostrará únicamente cuando el menú se colapse y se ocultará cuando el menú aparezca expandido. Cuando sea visible podremos pulsar sobre él para mostrar u ocultar el menú. Las opciones de menú, las cuales las añadiremos dentro de una lista tipo " <lu> " con la clase " . -->
-            <span class="navbar-toggler-icon"></span>
-            <!-- navbar-toggler-icon (hamburguesa) en Bootstrap 4 usa un SVG background-image . Hay 2 "versiones" de la imagen del icono del conmutador. Uno para una barra de navegación clara y otro para una barra de navegación oscura -->
-          </button>
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="./img/logo.png" class ="img-fluid" width="99px" height="99px" alt="Logo"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <!-- collapse . navbar-collapse ", que definirá la zona que se colapsará (u ocultará) para pantallas pequeñas. Cada elemento de la lista de menú <lu> se definirá mediante una etiqueta " <li> " sobre la que aplicaremos la clase "  -->
-            <ul class="navbar-nav ms-auto">
+              <ul class="navbar-nav ms-auto">
               <li class="nav-item">
                 <a class="nav-link active text-nav fw-bold" aria-current="page" href="#inicio">Inicio</a>
-                <!-- Cada elemento del menú será un .nav-item, los cuales contienen un enlace tipo .nav-link a la sección a mostrar. Para marcar el elemento del menú que está activo o seleccionado se utiliza la clase .active. -->
               </li>
               <li class="nav-item dropdown">
-              <!-- nav-item dropdown sirve para crear una lista desplegable -->
                 <a class="nav-link dropdown-toggle text-nav fw-bold" href="#cards" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Propiedades
                 </a>
@@ -227,7 +218,6 @@
                   <span class="visually-hidden">Next</span>
                 </button>
               </div>
-
             <div class="card-body">
               <p class="card-text">Departamento en alquiler en Corrientes 478, Barrio Norte, San Miguel de Tucumán</p>
               <p class="texto-card">33.000 ARS <small>+ expensas</small></p>
@@ -306,7 +296,6 @@
               <a href="#" class="btn btn-primary d-flex justify-content-center">Ver más</a>
             </div>
           </div>
-
         </div>        
       </section>
       
@@ -332,7 +321,6 @@
                     Por favor ingrese su Mail
                 </div>
             </div>
-  
             <div class="col-6">
                 <label for="validationDefault05" class="form-label">Telefono</label>
                 <input type="number" class="form-control" id="validationDefault05" minlength="3" maxlength="15" required>
@@ -350,13 +338,12 @@
           </form>
         </div>
       </section>
-      
       <!-- FOOTER -->
       <footer>
         <div class="footer-top">
           <div class="container">
-            <div class="row">
-              <div class="col-md-4">
+            <div class="row gy-3">
+              <div class="col-md-5">
                 <h4 class="logo-text">Sinergia</h4>
                 <p>Somos grandes y prestigiosos dentro del mercado inmobiliario.
                 </p>
@@ -368,37 +355,30 @@
                </div>
               </div>
               <div class="col-md-2">
-                <h5 class="title-sm">Navegación</h5>
+                <h5 class="title-sm">NAVEGACIÓN</h5>
                 <div class="footer-links">
                   <a href="#inicio">Inicio</a>
                   <a href="#presentacion">Nuestra empresa</a>
                   <a href="#cards">Alquileres</a>
                   <a href="#contacto">Contacto</a>
-
                 </div>
               </div>
-
               <div class="col-md-2">
-                <h5 class="title-sm">Acerca de</h5>
+                <h5 class="title-sm">ACERCA DE</h5>
                 <div class="footer-links">
                   <a href="#">FAQ's</a>
                   <a href="#">Politicas y privacidad</a>
                   <a href="#">Licencia</a>
-
                 </div>
               </div>
-
               <div class="col-md-2">
-                <h5 class="title-sm">Contacto</h5>
+                <h5 class="title-sm">CONTACTO</h5>
                 <div class="footer-links">
                   <p class="mb">1649 San Martín, San Miguel de Tucumán, 4000</p>
                   <p class="mb-">8(800)316-06-42</p>
                   <p class="mb" >sinergia@inmobiliaria.com</p>
-
                 </div>
               </div>
-
-
             </div>
           </div>
         </div>
@@ -415,12 +395,8 @@
              </div>
           </div>
        </div>
-
       </footer>
-
-
     </main>
-
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

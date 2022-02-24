@@ -210,6 +210,11 @@ footer .footer-links a:hover {
   background-size: cover;
 }
 
+.title-sm {
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
 @media (min-width: 320px){
   .portada-h{
       height: 250px;
